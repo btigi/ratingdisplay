@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ratingdisplay": {
+      "commandName": "Project",
+      "commandLineArgs": "D:\\st-tng.txt template.html D:\\out.html"
+    }
+  }
+}
