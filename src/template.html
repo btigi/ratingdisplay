@@ -37,31 +37,75 @@
             border: 1px solid #000;
             text-align: center;
             margin-bottom: 6px;
+            border-radius: 8px;
         }
 
         .header {
             font-weight: bold;
         }
 
-         @media (prefers-color-scheme: dark) {
+        @media (prefers-color-scheme: dark) {
             body {
                 background-color: #1e1e1e;
                 color: #f4f4f9;
             }
 
             .cell {
-               border: 1px solid #aaa;
-               background-color: #404040;
+                border: 1px solid #aaa;
             }
+        }
 
+        .rating-0 {
+            background-color: #660000;
+        }
+
+        .rating-1 {
+            background-color: #A52A2A;
+        }
+
+        .rating-2 {
+            background-color: #8B0000;
+        }
+
+        .rating-3 {
+            background-color: #B22222;
+        }
+
+        .rating-4 {
+            background-color: #CD5C5C;
+        }
+
+        .rating-5 {
+            background-color: #D2691E;
+        }
+
+        .rating-6 {
+            background-color: #DAA520;
+        }
+
+        .rating-7 {
+            background-color: #B8860B;
+        }
+
+        .rating-8 {
+            background-color: #9ACD32;
+        }
+
+        .rating-9 {
+            background-color: #228B22;
+        }
+
+        .rating-10 {
+            background-color: #006400;
+        }
     </style>
-    <title>My Ratings</title>
+    <title>{showname}</title>
 </head>
 <body>
     <div class="heading">{showname}</div>
 
     <div class="container">
-{ratings}
+        {ratings}
     </div>
 </body>
 </html>
