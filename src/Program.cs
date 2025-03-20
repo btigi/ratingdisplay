@@ -43,11 +43,14 @@ foreach (var line in ratingLines)
         continue;
     }
 
-    var rating = line.Split("#").First();
+    var parts = line.Split("#");
+    var rating = parts.First();
+    var title = parts.Last();
+
 
     var ratingTruncated = Math.Truncate(Convert.ToDouble(rating));
 
-    sb.Append($"<div class=\"cell rating-{ratingTruncated}\">{rating}</div>");
+    sb.Append($"<div class=\"cell rating-{ratingTruncated}\" title=\"{title}\">{rating}</div>");
 }
 
 var templateText = File.ReadAllText(args[1]);
